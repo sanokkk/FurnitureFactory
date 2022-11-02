@@ -1,0 +1,15 @@
+﻿@model test
+
+<div>
+	<form  asp-action="Update" asp-controller="Test">
+		<div class="Validation" asp-validation-summary="All"></div>
+		<div>
+			<label asp-for="name">Введите имя</label>
+			<input type="text" asp-for="name"></input>
+		</div>
+		
+		<div>
+			<input type="submit" value="Изменить"></input>
+		</div>
+	</form>
+</div>

@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mysql", "Mysql\Mysql.csproj", "{B81EC273-0EA0-4AEE-BA61-795F4A1B20EF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B81EC273-0EA0-4AEE-BA61-795F4A1B20EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B81EC273-0EA0-4AEE-BA61-795F4A1B20EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B81EC273-0EA0-4AEE-BA61-795F4A1B20EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B81EC273-0EA0-4AEE-BA61-795F4A1B20EF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

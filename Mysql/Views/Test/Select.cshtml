@@ -1,0 +1,29 @@
+﻿@model List<test>
+
+
+
+@{
+    foreach(var el in @Model)
+    {
+    <div class="card" style="padding:10px;">
+                <h5 class="card-title">Test @el.id_test</h5>
+                <p class="card-text">@el.name</p>
+                <div>
+                <button>
+                    <a asp-action="Delete" asp-controller="Test" asp-route-id="@el.id_test" class="btn btn-link" style="width:100% ">Удалить</a>
+                </button>
+                <button>
+                    <a asp-action="Update" asp-controller="Test" asp-route-id="@el.id_test" class="btn btn-link" style="width:100%">Изменить</a>
+                </button>
+                </div>
+                
+    </div>
+    }
+}
+<div class="card" >
+            <button style="width=100%">
+                <a asp-action="Add" asp-controller="Test"  class="btn btn-link" style="width:100%">Добавить</a>
+            </button>
+            
+        </div>
+

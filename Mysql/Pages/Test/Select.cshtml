@@ -1,0 +1,26 @@
+﻿@model System.Collections.Generic.List<Mysql.Models.test>
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>title</title>
+</head>
+<body>
+<div>
+    @{
+        foreach (var el in @Model)
+        {
+            <div class="card">
+                <p>@el.id_test.ToString() ---- @el.name</p>
+
+            </div>
+        }
+    }
+    </div>
+          </body>
+        </html>
