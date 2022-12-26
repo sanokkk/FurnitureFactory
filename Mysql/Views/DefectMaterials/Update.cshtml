@@ -1,0 +1,16 @@
+﻿@model defectMaterial
+
+<div>
+	<form  asp-action="Update" asp-controller="DefectMaterials">
+		<div class="Validation" asp-validation-summary="All"></div>
+		<div>
+			<label asp-for="quantity">Введите количество</label>
+			<input type="text" asp-for="quantity"></input>
+		</div>
+
+		
+		<div>
+			<input type="submit" value="Изменить"></input>
+		</div>
+	</form>
+</div>

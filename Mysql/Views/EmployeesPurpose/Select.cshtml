@@ -1,0 +1,45 @@
+﻿@model List<employee_purpose>
+@{
+    ViewData["Title"] = "Select";
+
+    Pager pager = new Pager();
+
+    int pageNo = 0;
+
+    if (ViewBag.Pager != null)
+    {
+        pager = ViewBag.Pager;
+        pageNo = pager.CurrentPage;
+    }
+}
+
+
+@{
+    foreach(var el in @Model)
+    {
+    <div class="card" style="padding:10px;">
+                    <h5 class="card-title">Test @el.id_purpose</h5>
+                    <p class="card-text">@el.purpose</p>
+                    
+                    
+    </div>
+    }
+}
+
+
+<div class="container">
+    @if (pager.TotalPages > 0)
+    {
+        <ul class="pagination justify-content-end">
+
+            @for (var pge = pager.StartPage ;pge <= pager.EndPage; pge++)
+            {
+            <li class="page-item @(pge == pager.CurrentPage ? "active" : "")">
+                <a class="page-link" asp-controller="EmployeesPurpose" asp-action="Select" asp-route-pg="@pge"> @pge </a>
+            </li>
+            }
+
+        </ul>
+    }
+</div>
+

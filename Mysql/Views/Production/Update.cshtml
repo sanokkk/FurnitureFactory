@@ -1,0 +1,24 @@
+﻿@model production
+
+<div>
+	<form  asp-action="Update" asp-controller="Fiber">
+		<div  asp-validation-summary="All"></div>
+		<div>
+			<label asp-for="id_machine">Введите номер станка</label>
+			<input type="text" asp-for="id_machine"></input>
+		</div>
+		<div>
+			<label asp-for="id_stock">Введите номер завода</label>
+			<input type="text" asp-for="id_stock"></input>
+		</div>
+		<div>
+			<label asp-for="id_employee">Введите номер сотрудника</label>
+			<input type="text" asp-for="id_employee"></input>
+		</div>
+
+		
+		<div>
+			<input type="submit" value="Изменить"></input>
+		</div>
+	</form>
+</div>

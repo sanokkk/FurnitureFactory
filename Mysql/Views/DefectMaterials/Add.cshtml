@@ -1,0 +1,14 @@
+﻿@model defectMaterial
+
+<div>
+	<form method="post" asp-action="Add" asp-controller="DefectMaterials">
+		<div class="Validation" asp-validation-summary="All"></div>
+		<div>
+			<label asp-for="quantity">Введите количество</label>
+			<input type="text" asp-for="quantity"></input>
+		</div>
+		<div>
+			<input type="submit"></input>
+		</div>
+	</form>
+</div>

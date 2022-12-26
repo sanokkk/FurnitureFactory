@@ -1,0 +1,14 @@
+﻿@model fiber
+
+<div>
+	<form method="post" asp-action="Add" asp-controller="Fiber">
+		<div class="Validation" asp-validation-summary="All"></div>
+		<div>
+			<label asp-for="name_fiber">Введите имя</label>
+			<input type="text" asp-for="name_fiber"></input>
+		</div>
+		<div>
+			<input type="submit"></input>
+		</div>
+	</form>
+</div>

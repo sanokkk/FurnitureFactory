@@ -1,0 +1,22 @@
+﻿@model readyComponent
+
+<div>
+	<form method="post" asp-action="Add" asp-controller="ReadyFurniture">
+		<div class="Validation" asp-validation-summary="All"></div>
+		<div>
+			<label asp-for="name_readyFurniture">Введите название</label>
+			<input type="text" asp-for="name_readyFurniture"></input>
+		</div>
+		<div>
+			<label asp-for="id_component">Введите номер компонента</label>
+			<input type="text" asp-for="id_component"></input>
+		</div>
+		<div>
+			<label asp-for="id_fiber">Введите номер ткани</label>
+			<input type="text" asp-for="id_fiber"></input>
+		</div>
+		<div>
+			<input type="submit"></input>
+		</div>
+	</form>
+</div>

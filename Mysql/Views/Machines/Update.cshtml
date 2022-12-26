@@ -1,0 +1,15 @@
+﻿@model machine
+
+<div>
+	<form  asp-action="Update" asp-controller="Machines">
+		<div class="Validation" asp-validation-summary="All"></div>
+		<div>
+			<label asp-for="id_purpose">Введите номер назначения</label>
+			<input type="number" asp-for="id_purpose"></input>
+		</div>
+		
+		<div>
+			<input type="submit" value="Изменить"></input>
+		</div>
+	</form>
+</div>

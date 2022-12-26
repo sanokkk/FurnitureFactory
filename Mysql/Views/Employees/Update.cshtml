@@ -1,0 +1,20 @@
+﻿@model employee
+
+<div>
+	<form  asp-action="Update" asp-controller="Employees">
+		<div class="Validation" asp-validation-summary="All"></div>
+		<div>
+			<label asp-for="name">Введите имя</label>
+			<input type="text" asp-for="name"></input>
+		</div>
+
+		<div>
+			<label asp-for="id_purpose">Введите номер профессии</label>
+			<input type="text" asp-for="id_purpose"></input>
+		</div>
+		
+		<div>
+			<input type="submit" value="Изменить"></input>
+		</div>
+	</form>
+</div>

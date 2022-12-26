@@ -1,0 +1,19 @@
+﻿@model stock
+
+<div>
+	<form method="post" asp-action="Add" asp-controller="Stocks">
+		<div class="Validation" asp-validation-summary="All"></div>
+		<div>
+			<label asp-for="stock_adress">Введите адрес</label>
+			<input type="text" asp-for="stock_adress"></input>
+		</div>
+
+		<div>
+			<label asp-for="id_readyFurniture">Введите номер мебели</label>
+			<input type="text" asp-for="id_readyFurniture"></input>
+		</div>
+		<div>
+			<input type="submit"></input>
+		</div>
+	</form>
+</div>

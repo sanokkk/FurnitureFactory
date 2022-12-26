@@ -1,0 +1,24 @@
+﻿@model readyComponent
+
+<div>
+	<form  asp-action="Update" asp-controller="ReadyFurniture">
+		<div class="text-danger"  asp-validation-summary="All"></div>
+		<div>
+			<label asp-for="name_readyFurniture">Введите название</label>
+			<input type="text" asp-for="name_readyFurniture"></input>
+		</div>
+		<div>
+			<label asp-for="id_component">Введите номер компонента</label>
+			<input   type="text" asp-for="id_component"></input>
+		</div>
+		<div>
+			<label asp-for="id_fiber">Введите номер ткани</label>
+			<input type="text" asp-for="id_fiber"></input>
+		</div>
+
+		
+		<div>
+			<input type="submit" value="Изменить"></input>
+		</div>
+	</form>
+</div>

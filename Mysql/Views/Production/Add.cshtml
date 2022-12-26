@@ -1,0 +1,22 @@
+﻿@model production
+
+<div>
+	<form method="post" asp-action="Add" asp-controller="Production">
+		<div class="Validation" asp-validation-summary="All"></div>
+		<div>
+			<label asp-for="id_machine">Введите номер станка</label>
+			<input type="text" asp-for="id_machine"></input>
+		</div>
+		<div>
+			<label asp-for="id_stock">Введите номер завода</label>
+			<input type="text" asp-for="id_stock"></input>
+		</div>
+		<div>
+			<label asp-for="id_employee">Введите номер сотрудника</label>
+			<input type="text" asp-for="id_employee"></input>
+		</div>
+		<div>
+			<input type="submit"></input>
+		</div>
+	</form>
+</div>

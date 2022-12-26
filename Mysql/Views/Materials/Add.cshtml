@@ -1,0 +1,14 @@
+﻿@model material
+
+<div>
+	<form method="post" asp-action="Add" asp-controller="Materials">
+		<div class="Validation" asp-validation-summary="All"></div>
+		<div>
+			<label asp-for="name_material">Введите имя</label>
+			<input type="text" asp-for="name_material"></input>
+		</div>
+		<div>
+			<input type="submit"></input>
+		</div>
+	</form>
+</div>

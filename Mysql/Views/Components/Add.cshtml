@@ -1,0 +1,18 @@
+﻿@model component
+
+<div>
+	<form method="post" asp-action="Add" asp-controller="Components">
+		<div class="Validation" asp-validation-summary="All"></div>
+		<div>
+			<label asp-for="name_component">Введите название</label>
+			<input type="text" asp-for="name_component"></input>
+		</div>
+		<div>
+			<label asp-for="id_material">Введите номер материала</label>
+			<input type="text" asp-for="id_material"></input>
+		</div>
+		<div>
+			<input type="submit"></input>
+		</div>
+	</form>
+</div>

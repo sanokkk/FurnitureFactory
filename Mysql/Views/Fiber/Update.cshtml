@@ -1,0 +1,16 @@
+﻿@model fiber
+
+<div>
+	<form  asp-action="Update" asp-controller="Fiber">
+		<div  asp-validation-summary="All"></div>
+		<div>
+			<label asp-for="name_fiber">Введите имя</label>
+			<input type="text" asp-for="name_fiber"></input>
+		</div>
+
+		
+		<div>
+			<input type="submit" value="Изменить"></input>
+		</div>
+	</form>
+</div>
